@@ -1,16 +1,18 @@
-import Button from "../components/button";
+import Container from "../components/container";
+import CoworkingCard from "../components/coworking-cards";
 
 export default function Index() {
   return (
-   <>
+   <Container>
     <div>All coworkings pages</div>
     <h1>home </h1>
-
-    <div className="p-6">
-      <img src="" alt="" />
-      <h2 className="text-lg font-semibold">Ground zero</h2>
-      <p className="text-stone-200">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta rerum voluptatum cumque eveniet distinctio iure nobis, provident beatae atque, officia repellat modi earum ut blanditiis, consequatur explicabo sit maxime eius.</p>
-      <Button to="/coworking" className="mt-5">View details</Button>
-    </div>
-   </>
+    
+   <div className="grid gap-3 sm:grid-cols-2 md:grid-cols-3">
+    {/* {[...Array(20).map()]} */}
+    <CoworkingCard title={"csec"} desc={"good"} thumbSrc="https://www.google.com/url?sa=i&url=https%3A%2F%2Finsideevs.com%2Fnews%2F566539%2Ftesla-working-feverishly-on-roadster%2F&psig=AOvVaw1fSaNkcJA2oydUGb_bJhYy&ust=1706463361608000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCNiZi8iN_oMDFQAAAAAdAAAAABAD" />
+    <CoworkingCard title={"cyber"} desc={"good"} thumbSrc={""} />
+    <CoworkingCard title={"vite"} desc={"good"} thumbSrc={""} />
+   </div>
+  
+   </Container>
 )}
