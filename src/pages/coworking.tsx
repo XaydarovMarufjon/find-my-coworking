@@ -5,5 +5,3 @@ export default function Coworking() {
 
   return <div>You're viewing coworking  your aa #{id}</div>
 }
-
-
